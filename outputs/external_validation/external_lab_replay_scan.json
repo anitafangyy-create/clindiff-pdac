@@ -1,0 +1,35 @@
+{
+  "internal_path": "data/raw/pancreatic_cancer_data_normalized_clean.csv",
+  "headline_labs": [
+    "db_before_treatment",
+    "ggt_before_treatment",
+    "tb_before_treatment"
+  ],
+  "compatible_dataset_count": 0,
+  "datasets": [
+    {
+      "dataset": "SEER",
+      "path": "data/processed/seer_pancreatic_cancer.csv",
+      "decision": "contextualization_only",
+      "support_level": "epidemiologic_contextualization",
+      "shared_numeric_count": 1,
+      "shared_headline_target_count": 0,
+      "shared_headline_targets": "None",
+      "missing_headline_targets": "db_before_treatment, ggt_before_treatment, tb_before_treatment",
+      "is_replay_ready": false,
+      "recommended_next_step": "Use as context only and continue searching compatible lab cohort"
+    },
+    {
+      "dataset": "TCGA-PAAD",
+      "path": "data/TCGA_PAAD_cbio/tcga_patient_clinical.csv",
+      "decision": "contextualization_only",
+      "support_level": "clinical_molecular_context",
+      "shared_numeric_count": 2,
+      "shared_headline_target_count": 0,
+      "shared_headline_targets": "None",
+      "missing_headline_targets": "db_before_treatment, ggt_before_treatment, tb_before_treatment",
+      "is_replay_ready": false,
+      "recommended_next_step": "Use as context only and continue searching compatible lab cohort"
+    }
+  ]
+}

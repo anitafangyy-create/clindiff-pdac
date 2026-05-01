@@ -1,0 +1,19 @@
+MissingRate,Feature,ClinDiff-Lite Strategy,ClinDiff-Gated Strategy
+20%,age,mean,mean
+20%,survival_days,mean,mean
+20%,fasting_glucose_mmol_L,mean,mean
+20%,tb_before_treatment,regression,regression
+20%,ggt_before_treatment,regression,regression
+20%,db_before_treatment,regression,regression
+40%,age,mean,mean
+40%,survival_days,mean,mean
+40%,fasting_glucose_mmol_L,mean,mean
+40%,tb_before_treatment,regression,regression
+40%,ggt_before_treatment,mean,mean
+40%,db_before_treatment,regression,regression
+60%,age,mean,mean
+60%,survival_days,mean,mean
+60%,fasting_glucose_mmol_L,mean,mean
+60%,tb_before_treatment,regression,regression
+60%,ggt_before_treatment,mean,mean
+60%,db_before_treatment,regression,regression

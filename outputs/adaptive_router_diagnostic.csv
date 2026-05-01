@@ -1,0 +1,4 @@
+MissingRate,Grouped Usage Rate,Mean Signal Strength Score,Median Transformed Distance,Mean Usable Predictor Count,Mechanism Label,Mechanism Score,Top Gate Reason
+20%,0.7132509586706434,0.7093576375746293,0.5746367596869223,3.4593097571367704,mcar_like,0.026702708823941216,adaptive_grouped_refinement
+40%,0.4831700042607584,0.5597358435365363,0.6757940716576764,2.5743502343417126,mcar_like,0.017223943837463594,insufficient_row_signal
+60%,0.0,0.38486518169605344,0.9226807561548002,1.6970600766936514,mcar_like,0.014533391709850659,high_global_missingness

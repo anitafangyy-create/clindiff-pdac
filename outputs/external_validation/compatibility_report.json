@@ -1,0 +1,26 @@
+{
+  "internal_path": "data/raw/pancreatic_cancer_data_normalized_clean.csv",
+  "external_path": "data/processed/seer_pancreatic_cancer.csv",
+  "internal_rows": 2419,
+  "external_rows": 124863,
+  "decision": "contextualization_only",
+  "rationale": "External cohort lacks enough shared numeric clinical variables, especially the liver biomarker group, so it can support only cohort contextualization.",
+  "shared_columns": [
+    "age",
+    "gender",
+    "stage_at_diagnosis",
+    "survival_months"
+  ],
+  "shared_numeric_columns": [
+    "age"
+  ],
+  "shared_predictor_columns": [
+    "age"
+  ],
+  "shared_headline_targets": [],
+  "missing_headline_targets": [
+    "db_before_treatment",
+    "ggt_before_treatment",
+    "tb_before_treatment"
+  ]
+}

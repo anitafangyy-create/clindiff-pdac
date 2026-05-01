@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "ClinDiff-PDAC"
+message: "If you use this repository, please cite the associated manuscript and this software record."
+type: software
+authors:
+  - family-names: "Fang"
+    given-names: "Yuanyuan"
+    affiliation: "The Hong Kong University of Science and Technology (Guangzhou)"
+    email: "yfang171@connect.hkust-gz.edu.cn"
+  - family-names: "Chen"
+    given-names: "Zhiqiang"
+    affiliation: "Quzhou University"
+    email: "czq@qzc.edu.cn"
+  - family-names: "He"
+    given-names: "Sijia"
+    affiliation: "Cancer Center, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine"
+    email: "he-si-jia@163.com"
+  - family-names: "Wu"
+    given-names: "Kaishun"
+    affiliation: "The Hong Kong University of Science and Technology (Guangzhou)"
+    email: "wuks@hkust-gz.edu.cn"
+  - family-names: "Li"
+    given-names: "Qi"
+    affiliation: "Cancer Center, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine; Shanghai Key Laboratory of Pancreatic Disease, Institute of Pancreatic Disease, Shanghai Jiao Tong University School of Medicine"
+    email: "leeqi@sjtu.edu.cn"
+  - family-names: "Ahmed"
+    given-names: "Irfan"
+    affiliation: "King's College Hospital London - Saudi Arabia"
+    email: "Irfan.Ahmed@kch.sa"
+repository-code: "https://github.com/<your-org>/clindiff-pdac"
+license: "MIT"
+keywords:
+  - PDAC
+  - imputation
+  - electronic health records
+  - bilirubin
+  - missing data
+abstract: "ClinDiff-PDAC is a lightweight, missingness-informed imputation repository focused on targeted completion of a physiologically linked liver biomarker trio in pancreatic ductal adenocarcinoma structured EHR data."

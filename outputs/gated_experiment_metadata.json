@@ -1,0 +1,66 @@
+{
+  "cohort_rows": 2347,
+  "source_columns": [
+    "age",
+    "survival_days",
+    "fasting_glucose_mmol_L",
+    "tb_before_treatment",
+    "ggt_before_treatment",
+    "db_before_treatment"
+  ],
+  "headline_non_outcome_columns": [
+    "age",
+    "fasting_glucose_mmol_L",
+    "tb_before_treatment",
+    "ggt_before_treatment",
+    "db_before_treatment"
+  ],
+  "primary_endpoint": "mean_rmse_liver_trio_original_units",
+  "secondary_endpoint": "rmse_non_outcome_columns_original_units",
+  "liver_trio_columns": [
+    "db_before_treatment",
+    "ggt_before_treatment",
+    "tb_before_treatment"
+  ],
+  "outcome_columns_excluded_from_headline_metrics": [
+    "survival_days"
+  ],
+  "masking_design": {
+    "artificial_missingness": "MCAR",
+    "rates": [
+      0.2,
+      0.4,
+      0.6
+    ],
+    "repeats_per_rate": 100,
+    "mask_only_originally_observed_cells": true,
+    "preserve_at_least_one_observed_value_per_row": true
+  },
+  "training_and_refit": {
+    "refit_strategy_selection_each_seed": true,
+    "validation_holdout_drawn_from_originally_observed_values": true,
+    "outcome_columns_excluded_from_biomarker_predictors": [
+      "survival_days"
+    ]
+  },
+  "statistics": {
+    "paired_bootstrap_resamples": 5000,
+    "paired_bootstrap_unit": "seed_level_delta",
+    "paired_permutation_resamples": 10000,
+    "paired_permutation_test": "two_sided_sign_flip"
+  },
+  "transforms_and_constraints": {
+    "regression_transform": "log1p on non-negative predictors and targets",
+    "inverse_transform": "expm1 back to original units",
+    "winsorization": "clip predictions to observed 1st-99th percentile range",
+    "non_negative_truncation": true,
+    "clinical_constraint": "DB <= TB"
+  },
+  "gated_branch": {
+    "global_missingness_threshold": 0.6,
+    "min_liver_trio_observed": 2,
+    "min_usable_predictors": 2,
+    "distance_threshold": 2.25,
+    "signal_strength_threshold": 0.55
+  }
+}

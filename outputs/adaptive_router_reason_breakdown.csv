@@ -1,0 +1,10 @@
+MissingRate,GateReason,Share
+20%,adaptive_grouped_refinement,0.7132509586706434
+20%,insufficient_row_signal,0.2650191734128675
+20%,out_of_distribution_signal,0.019173412867490414
+20%,low_signal_strength,0.0025564550489987218
+40%,insufficient_row_signal,0.4874307626757563
+40%,adaptive_grouped_refinement,0.4831700042607584
+40%,out_of_distribution_signal,0.02258201959948871
+40%,low_signal_strength,0.006817213463996591
+60%,high_global_missingness,1.0

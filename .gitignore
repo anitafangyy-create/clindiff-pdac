@@ -1,0 +1,81 @@
+.DS_Store
+Thumbs.db
+*/.DS_Store
+
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+__pycache__/
+*/__pycache__/
+
+dist/
+build/
+.eggs/
+.Python
+
+# Virtual environments and local dependency caches
+venv/
+env/
+ENV/
+.venv/
+.vendor_py37/
+.wheelhouse/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.orig
+*.bak
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Local working data: keep only documentation/manifests public
+data/**
+!data/README.md
+!data/DATA_EXPORT_README.md
+!data/public_omics/
+data/public_omics/**
+!data/public_omics/README.md
+!data/public_omics/*.md
+
+# Generated result archives and local exports
+outputs/archive/
+outputs/**/*.pdf
+outputs/**/*.docx
+outputs/**/*.tmp
+
+# Model checkpoints and logs
+checkpoints/*.pt
+checkpoints/*.pth
+models/*.pt
+models/*.pth
+*.ckpt
+logs/
+*.log
+wandb/
+tensorboard_logs/
+
+# Test and static-analysis caches
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment files
+.env
+.env.local
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
